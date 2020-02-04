@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .fundo {
+        background-image: url(emoji.jpg);
+        border : 2px solid gold;
+        border-radius : 10px;
+        margin-bottom: 15px;
+        padding-left: 50px;
+        width: 250px;
+    }
+ /*   https://vast-ravine-74462.herokuapp.com/ */
+    h1{
+        color: rgba(255, 255, 255, 0.61);
+    }
+    article {
+        background-color: black;
+        border : 1px solid gold;
+        padding-left: 50px;
+        
+    }
+    dialog {        
+        background-color: black;
+        border-radius : 10px;
+        left: 300px;
+        top: 450px;
+    }
+    div{
+        border : 2px solid gold;
+        display: flex;
+    }
+    .estrutura{
+        border : 2px solid gold;
+        border-radius : 10px;
+        margin-bottom: 15px;
+        padding-left: 50px;
+        width: 1000px;
+    }
+    .acordeon{
+        background-color: gold;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.5s;
+        text-transform: uppercase;
+        text-decoration: currentColor;
+    }
+    .painel{
+        padding: 0 18px;
+        background-color: yellow;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+.selecionado, .acordeon:hover{
+    background-color: blanchedalmond;
+}
+    
+</style>
+<body style="background-color:  rgb(0, 0, 0);">
+
+    <img src="eu.jpg" width="300px" height="300px" style="border-radius: 50%;">
+    <img src="test.png" width="1000px" height="250px">
+   <div>
+    <aside class="fundo" >
+        <article>
+        <h1>nome :  </h1> 
+        <h1 style="color: floralwhite;"> juliano osmir</h1>
+        </article>
+        <article>
+        <h1>data de nacimento :  </h1> 
+        <h1 style="color: floralwhite;"> 11/07/1999</h1>
+        </article>
+       <article>
+        <h1>Endereço :  </h1> 
+        <h1 style="color: floralwhite;"> Rua Clementina de Jesus Nº 26 Setor 5 conjunto Aero Rancho</h1>
+        </article>
+        <article>
+         <h1>celular :  </h1> 
+        <h1 style="color: floralwhite;"> (67) 997150500</h1>
+        </article>
+        <article>
+        <h1>whatsapp :  </h1> 
+        <h1 style="color: floralwhite;"> (67) 981148573</h1>
+        </article>
+        <article>
+        <h1>Email:  </h1> 
+        <p style="color: floralwhite; "> Julianoosmir@Outlook.com  </p>
+        </article>
+        <article>
+         <h1>gitbub:  </h1> 
+          <a href="https://github.com/">https://github.com/</a>
+         </article>
+    
+    </aside>
+    <aside class="estrutura">
+        <button class="acordeon">Formação:</button>
+        <article class="painel">
+        <h1 style="color:rgb(0, 0, 0); "> 
+          <p> •	2º Grau Completo, na Escola Estadual Jayme Verissimo Campos Junior na cidade de Alta Floresta – MT</p>
+          <p>•	Rotinas administrativas, no Prepara Curso – cursos 96 horas.</p>
+          <p>  •	2 módulos de secretariado concluídos- Secitec – 342 horas.</p>
+          <p> •	Operador de computador, no SENAI-MT – 160 horas.</p>
+          <p> •	Senac – telemarketing, cobrança e credito – 14 meses</p>
+          <p> •	UNIDERP- ciência da computação – cursando.</p>
+          <p>  •	Linguagens de programação: Java, javascript, html, css, c++. – nível intermediário. </p>
+             </h1>
+        </article>
+        <button class="acordeon">experiencia :</button>
+        <article class="painel">
+        <h1 style="color:rgb(0, 0, 0); "> 
+          <p> I.	Auxiliar geral- Autopeças Dois Irmãos – 10 meses:  Auxilio logistico na organizaçao da loja  </p>
+          <p>II.	Recenseador- Censo AGRO IBGE – 3 meses:  recenseamento de comunidades rurais para fins estatisticos. Obs: tive o maior numero de setores atentidos.  </p>
+          <p> III.	Call center de suporte técnico BTCC-  14 meses: atentimento aos clientes da oi e suporte as dificuldades tecnicas dos produtos da operadora.</p>
+             </h1>
+        </article>
+        <button class="acordeon"> objetivo :</button>
+        <article class="painel">
+            <h1 style="color:rgb(0, 0, 0); ">
+             <p>Colaborar em um ambiente de trabalho onde possa colocar em prática meus conhecimentos em favor da instituição na qual viso integrar, focando sempre o beneficio e o crescimento da organização e o crescimento profissional.</p>
+        </h1>
+            </article>
+            <button class="acordeon"> Front End :  </button>
+            <article class="painel">
+                <h1 style="color:rgb(0, 0, 0); ">
+      <p><button onclick="abrirdialog01()" style="background-color: black; color: gold; border-radius: 15px; padding: 10px; "> CSS e HTML </button> 
+         <button onclick="abrirdialog02()"style="background-color: black; color: gold; border-radius: 15px; padding: 10px;">Bootstrap</button> 
+         <button onclick="abrirdialog03()"style="background-color: black; color: gold; border-radius: 15px;  padding: 10px;  " >VUE.JS</button>  
+     </p>
+            </h1>
+                </article>
+         <button class="acordeon"> back End :  </button>
+         <article class="painel">
+         <h1 style="color:rgb(0, 0, 0); ">
+        <p>
+            <button onclick="abrirdialog04()" style="background-color: black; color: gold; border-radius: 15px;  padding: 10px;  " > java </button> 
+             <button onclick="abrirdialog05()" style="background-color: black; color: gold; border-radius: 15px;  padding: 10px;  " > NODE.JS</button>    
+       </p>
+         </h1>
+        </article>
+        <button class="acordeon"> SGBD :  </button>
+         <article class="painel">
+         <h1 style="color:rgb(0, 0, 0); ">
+        <p>
+         <button onclick="abrirdialog06()" style="background-color: black; color: gold; border-radius: 15px;  padding: 10px;  " > mysql </button> 
+         <button onclick="abrirdialog07()" style="background-color: black; color: gold; border-radius: 15px;  padding: 10px;  " > mongoDB </button>
+       </p>
+         </h1>
+        </article>
+    
+        <script type="text/javascript" src="sanfona.js"></script>
+
+    </aside>    
+    
+  </div>
+
+<dialog id="d1" > <img src="hec.jpg" style="width: 800px; height: 400px;"> <button onclick="fechardialog01()"> X </button> </dialog>
+<dialog id="d2"  > <img src="boot.jpg" style="width: 800px; height: 400px;"> <button onclick="fechardialog02()"> X </button>  </dialog>
+<dialog id="d3" > <img src="vue.jpg" style="width: 800px; height: 400px;"> <button onclick="fechardialog03()"> X </button> </dialog>
+<dialog id="d4" > <img src="java.jpg" style="width: 800px; height: 400px;"> <button onclick="fechardialog04()"> X </button> </dialog>
+<dialog id="d5" > <img src="node.jpg" style="width: 800px; height: 400px;"> <button onclick="fechardialog05()"> X </button> </dialog>
+<dialog id="d6" > <img src="sql.jpg" style="width: 800px; height: 400px;"> <button onclick="fechardialog06()"> X </button> </dialog>
+<dialog id="d7" > <img src="mongo.jpg" style="width: 800px; height: 400px;"> <button onclick="fechardialog07()"> X </button> </dialog>
+
+<script>
+    function fechardialog01(){
+        document.getElementById("d1").removeAttribute("open");
+    }
+    function fechardialog02(){
+        document.getElementById("d2").removeAttribute("open");
+    }
+    function fechardialog03(){
+        document.getElementById("d3").removeAttribute("open");
+    }
+    function fechardialog04(){
+        document.getElementById("d4").removeAttribute("open");
+    }
+    function fechardialog05(){
+        document.getElementById("d5").removeAttribute("open");
+    }
+    function fechardialog06(){
+        document.getElementById("d6").removeAttribute("open");
+    }
+    function fechardialog07(){
+        document.getElementById("d7").removeAttribute("open");
+    }
+    function abrirdialog01(){
+        document.getElementById("d1").setAttribute("open","");
+    }
+    function abrirdialog02(){
+        document.getElementById("d2").setAttribute("open","");
+    }
+    function abrirdialog03(){
+        document.getElementById("d3").setAttribute("open","");
+    }
+    function abrirdialog04(){
+        document.getElementById("d4").setAttribute("open","");
+    }
+    function abrirdialog05(){
+        document.getElementById("d5").setAttribute("open","");
+    }
+    function abrirdialog06(){
+        document.getElementById("d6").setAttribute("open","");
+    }
+    function abrirdialog07(){
+        document.getElementById("d7").setAttribute("open","");
+    }
+</script>
+    
+</body>
+</html>
